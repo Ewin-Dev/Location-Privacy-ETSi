@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2021-11-12 16:53:58 by Eclipse SUMO GUI Version 1.10.0
+-->
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <!-- <input>
+        <net-file value="map.xml"/>
+        <route-files value="routes.xml"/>
+		<additional-files value="dummy-detectors.add.xml"/>
+    </input> -->
+
+    <!-- <input>
+        <net-file value="spider_medium.xml"/>
+        <route-files value="routes.xml"/>
+        <additional-files value="spider_medium_detectors.add.xml"/>
+    </input> -->
+
+    <input>
+        <net-file value="manhattan_grid.xml"/>
+        <route-files value="routes.xml"/>
+        <additional-files value="manhattan_detectors.add.xml"/>
+    </input>
+
+    <!-- <input>
+        <net-file value="ingolstadt.xml"/>
+        <route-files value="routes.xml"/>
+        <additional-files value="ingolstadt_detectors.add.xml"/>
+    </input> -->
+
+
+</configuration>
