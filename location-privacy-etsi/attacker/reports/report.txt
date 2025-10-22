@@ -1,0 +1,17 @@
+-------------------- Report of ADVANCED ATTACK --------------------
+
+Name of attack script:   /home/ewin/PythonProjects/Location Privacy/location-privacy-etsi/attacker/attack_advanced.py
+Attack started at        22/10/2025 14:41:55
+Attack ended at          22/10/2025 14:42:15
+Runtime:                 20.021034717559814
+
+simulated annealing iterations: 2
+simulated annealing result: 711965.6166666666
+Attacker knowledge file is   'spider_100_7_0_attacker.xml'
+- of file size               1161661 bytes
+
+Output file is   'attacks/test_attack.xml'
+- of file size   208905 bytes
+
+-------------------- END of report --------------------
+

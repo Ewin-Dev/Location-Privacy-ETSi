@@ -1,0 +1,18 @@
+-------------------- Report of ADVANCED EVALUATION --------------------
+
+Name of evaluation script:   /home/ewin/PythonProjects/Location Privacy/location-privacy-etsi/challenger/evaluation_advanced.py
+Evaluation started at        22/10/2025 14:44:04
+Evaluation ended at          22/10/2025 14:44:08
+Runtime:                     3.464785575866699
+
+Measure of success:     Correctly assigned transactions to wallets or trips with Jaccard index
+Number of transactions: 8972
+Challenger knowledge file is   'spider_100_7_0_challenger.xml'
+- of file size                 2760618 bytes
+
+Avg. percentage of right transactions in trips: 33.03%.
+
+Avg. percentage of right transactions in wallets: 5.63%.
+
+-------------------- END of report --------------------
+
