@@ -92,7 +92,7 @@ def challengerWallets():
 def report():
     time1 = time.time()
     rep_end = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
-    f = open(rsc_path + 'reports/' + rep_name, 'a')
+    f = open('reports/' + rep_name, 'a')
     f.write('-------------------- Report of ADVANCED EVALUATION --------------------\n\n')
     f.write('Name of evaluation script:   ' + sys.argv[0] + '\n')
     f.write('Evaluation started at        ' + str(rep_start) +'\n')
@@ -101,14 +101,14 @@ def report():
     f.write('Measure of success:     Correctly assigned transactions to wallets or trips with Jaccard index' +"\n")
     f.write('Number of transactions: ' + str(rep_transactions) + '\n')
 
-    f.write('Challenger knowledge file is   ' + "'" + rsc_path + 'knowledge/' + knowledge_file_name + "'\n")
-    f.write('- of file size                 ' + str(os.path.getsize(rsc_path + 'knowledge/' + knowledge_file_name)) + ' bytes\n\n')
+    f.write('Challenger knowledge file is   ' + "'" + knowledge_file_name + "'\n")
+    f.write('- of file size                 ' + str(os.path.getsize(knowledge_file_name)) + ' bytes\n\n')
 
     f.write('Avg. percentage of right transactions in trips: ' + str(resultTrips) + '%.\n\n')
     f.write('Avg. percentage of right transactions in wallets: ' + str(resultWallets) + '%.\n\n')
     
     f.write('-------------------- END of report --------------------\n\n')
-    print('Report written to ' + "'" + rsc_path + 'reports/' + rep_name + "'")
+    print('Report written to ' + "'" + 'reports/' + rep_name + "'")
 
 
 
@@ -124,11 +124,11 @@ def get_options():
 def main():
     global root_challenger_knowlege, root_attackere, resultTrips, resultWallets, rep_transactions
    
-    tree_challenger_knowlege = ET.parse(rsc_path + 'knowledge/' + str(knowledge_file_name))
+    tree_challenger_knowlege = ET.parse(str(knowledge_file_name))
     root_challenger_knowlege = tree_challenger_knowlege.getroot()
    
 
-    tree_attacker = ET.parse(rsc_path + 'attacks/' + str(eval_file_name))
+    tree_attacker = ET.parse(str(eval_file_name))
     root_attackere = tree_attacker.getroot()
     resultTrips = challengerTrips()
     resultWallets =challengerWallets()
