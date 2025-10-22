@@ -30,7 +30,7 @@ class Trip:
 #generates a graph with conectet detectors (nodes are the detectors). 
 def generateGraph():
     
-    tree_detectors = ET.parse(rsc_path + 'knowledge/' + simulated_times_file)
+    tree_detectors = ET.parse(simulated_times_file)
     root_detectors = tree_detectors.getroot()
 
     for detector in root_detectors.iter('route'):
@@ -506,7 +506,7 @@ def get_options():
 def report():
     time1 = time.time()
     rep_end = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
-    with open(rsc_path + 'reports/' + rep_name, 'a+') as f:
+    with open('reports/' + rep_name, 'a+') as f:
         f.write('-------------------- Report of ADVANCED ATTACK --------------------\n\n')
         f.write('Name of attack script:   ' + sys.argv[0] + '\n')
         f.write('Attack started at        ' + str(rep_start) +'\n')
@@ -514,14 +514,14 @@ def report():
         f.write('Runtime:                 ' + str(time1 - time0) + '\n\n')
         f.write('simulated annealing iterations: ' + str(annealing) +'\n')
         f.write('simulated annealing result: ' + str(annealingResult) +'\n')
-        f.write('Attacker knowledge file is   ' + "'" + rsc_path + 'knowledge/' + input_file_name + "'\n")
-        f.write('- of file size               ' + str(os.path.getsize(rsc_path + 'knowledge/' + input_file_name)) + ' bytes\n\n')
-        f.write('Output file is   ' + "'" + rsc_path + 'attacks/' + output_file_name + "'\n")
-        f.write('- of file size   ' + str(os.path.getsize(rsc_path + 'attacks/' + output_file_name)) + ' bytes\n\n')
+        f.write('Attacker knowledge file is   ' + "'" + input_file_name + "'\n")
+        f.write('- of file size               ' + str(os.path.getsize(input_file_name)) + ' bytes\n\n')
+        f.write('Output file is   ' + "'" + 'attacks/' + output_file_name + "'\n")
+        f.write('- of file size   ' + str(os.path.getsize('attacks/' + output_file_name)) + ' bytes\n\n')
        
         f.write('-------------------- END of report --------------------\n\n')
     
-    print('Report written to ' + "'" + rsc_path + 'reports/' + rep_name + "'")
+    print('Report written to ' + "'" + 'reports/' + rep_name + "'")
 
 
 
@@ -538,7 +538,7 @@ def main():
     usedTrans = set([])
 
 
-    tree_attacker_knowlege = ET.parse(rsc_path + 'knowledge/' + input_file_name)
+    tree_attacker_knowlege = ET.parse(input_file_name)
     
     root_attacker_knowlege = tree_attacker_knowlege.getroot()
 
@@ -570,7 +570,7 @@ def main():
         strList = list(map(str, wallet.used))
         ET.SubElement(wallets, "wallet",  ids = " ".join(strList) )
     tree = ET.ElementTree(output_root)
-    tree.write(rsc_path + 'attacks/' + output_file_name)
+    tree.write('attacks/' + output_file_name)
     
 
     
