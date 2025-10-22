@@ -1,0 +1,302 @@
+<junctions>
+  <junction name="A1" detectors="e1det_A0A1_0 e1det_A2A1_0 e1det_B1A1_0 e1det_A9A10_0" cost="1"/>
+  <junction name="B0" detectors="e1det_A0B0_0 e1det_B1B0_0 e1det_C0B0_0" cost="1"/>
+  <junction name="0A" detectors="e1det_A10A11_0 e1det_A10A9_0 e1det_B10A10_0 e1det_A20A19_0 e1det_B20A20_0 e1det_A20A21_0" cost="1"/>
+  <junction name="2A" detectors="e1det_A12A11_0 e1det_B12A12_0 e1det_A12A13_0 e1det_A22A21_0 e1det_B22A22_0 e1det_A22A23_0" cost="1"/>
+  <junction name="1A" detectors="e1det_B11A11_0 e1det_A11A10_0 e1det_A11A12_0 e1det_A21A20_0 e1det_B21A21_0 e1det_A21A22_0" cost="1"/>
+  <junction name="A9" detectors="e1det_A8A9_0 e1det_B9A9_0" cost="1"/>
+  <junction name="0B" detectors="e1det_A10B10_0 e1det_C10B10_0 e1det_B10B11_0 e1det_B20B19_0 e1det_A20B20_0 e1det_C20B20_0 e1det_B20B21_0 e1det_B10B9_0" cost="1"/>
+  <junction name="1B" detectors="e1det_B11B10_0 e1det_A11B11_0 e1det_C11B11_0 e1det_B11B12_0 e1det_B21B20_0 e1det_A21B21_0 e1det_C21B21_0 e1det_B21B22_0" cost="1"/>
+  <junction name="B1" detectors="e1det_B9B10_0 e1det_A1B1_0 e1det_B0B1_0 e1det_B2B1_0 e1det_C1B1_0" cost="1"/>
+  <junction name="3A" detectors="e1det_A13A12_0 e1det_B13A13_0 e1det_A13A14_0 e1det_A23A22_0 e1det_B23A23_0 e1det_A23A24_0" cost="1"/>
+  <junction name="2B" detectors="e1det_B12B11_0 e1det_A12B12_0 e1det_C12B12_0 e1det_B12B13_0 e1det_B22B21_0 e1det_A22B22_0 e1det_C22B22_0 e1det_B22B23_0" cost="1"/>
+  <junction name="4A" detectors="e1det_A14A13_0 e1det_B14A14_0 e1det_A14A15_0 e1det_A24A23_0 e1det_B24A24_0 e1det_A24A25_0" cost="1"/>
+  <junction name="3B" detectors="e1det_B13B12_0 e1det_A13B13_0 e1det_C13B13_0 e1det_B13B14_0 e1det_B23B22_0 e1det_A23B23_0 e1det_C23B23_0 e1det_B23B24_0" cost="1"/>
+  <junction name="5A" detectors="e1det_A15A14_0 e1det_B15A15_0 e1det_A15A16_0 e1det_A25A24_0 e1det_B25A25_0 e1det_A25A26_0" cost="1"/>
+  <junction name="4B" detectors="e1det_B14B13_0 e1det_A14B14_0 e1det_C14B14_0 e1det_B14B15_0 e1det_B24B23_0 e1det_A24B24_0 e1det_C24B24_0 e1det_B24B25_0" cost="1"/>
+  <junction name="6A" detectors="e1det_A16A15_0 e1det_B16A16_0 e1det_A16A17_0 e1det_A26A25_0 e1det_B26A26_0 e1det_A26A27_0" cost="1"/>
+  <junction name="5B" detectors="e1det_B15B14_0 e1det_A15B15_0 e1det_C15B15_0 e1det_B15B16_0 e1det_B25B24_0 e1det_A25B25_0 e1det_C25B25_0 e1det_B25B26_0" cost="1"/>
+  <junction name="7A" detectors="e1det_A17A16_0 e1det_B17A17_0 e1det_A17A18_0 e1det_A27A26_0 e1det_B27A27_0 e1det_A27A28_0" cost="1"/>
+  <junction name="6B" detectors="e1det_B16B15_0 e1det_A16B16_0 e1det_C16B16_0 e1det_B16B17_0 e1det_B26B25_0 e1det_A26B26_0 e1det_C26B26_0 e1det_B26B27_0" cost="1"/>
+  <junction name="8A" detectors="e1det_A18A17_0 e1det_B18A18_0 e1det_A18A19_0 e1det_A28A27_0 e1det_B28A28_0 e1det_A28A29_0" cost="1"/>
+  <junction name="7B" detectors="e1det_B17B16_0 e1det_A17B17_0 e1det_C17B17_0 e1det_B17B18_0 e1det_B27B26_0 e1det_A27B27_0 e1det_C27B27_0 e1det_B27B28_0" cost="1"/>
+  <junction name="9A" detectors="e1det_A19A18_0 e1det_B19A19_0 e1det_A19A20_0 e1det_A29A28_0 e1det_B29A29_0" cost="1"/>
+  <junction name="8B" detectors="e1det_B18B17_0 e1det_A18B18_0 e1det_C18B18_0 e1det_B18B19_0 e1det_B28B27_0 e1det_A28B28_0 e1det_C28B28_0 e1det_B28B29_0" cost="1"/>
+  <junction name="9B" detectors="e1det_B19B18_0 e1det_A19B19_0 e1det_C19B19_0 e1det_B19B20_0 e1det_B29B28_0 e1det_A29B29_0 e1det_C29B29_0" cost="1"/>
+  <junction name="A0" detectors="e1det_A1A0_0 e1det_B0A0_0" cost="1"/>
+  <junction name="A2" detectors="e1det_A1A2_0 e1det_A3A2_0 e1det_B2A2_0" cost="1"/>
+  <junction name="A3" detectors="e1det_A2A3_0 e1det_A4A3_0 e1det_B3A3_0" cost="1"/>
+  <junction name="B2" detectors="e1det_A2B2_0 e1det_B1B2_0 e1det_B3B2_0 e1det_C2B2_0" cost="1"/>
+  <junction name="A4" detectors="e1det_A3A4_0 e1det_A5A4_0 e1det_B4A4_0" cost="1"/>
+  <junction name="B3" detectors="e1det_A3B3_0 e1det_B2B3_0 e1det_B4B3_0 e1det_C3B3_0" cost="1"/>
+  <junction name="A5" detectors="e1det_A4A5_0 e1det_A6A5_0 e1det_B5A5_0" cost="1"/>
+  <junction name="B4" detectors="e1det_A4B4_0 e1det_B3B4_0 e1det_B5B4_0 e1det_C4B4_0" cost="1"/>
+  <junction name="A6" detectors="e1det_A5A6_0 e1det_A7A6_0 e1det_B6A6_0" cost="1"/>
+  <junction name="B5" detectors="e1det_A5B5_0 e1det_B4B5_0 e1det_B6B5_0 e1det_C5B5_0" cost="1"/>
+  <junction name="A7" detectors="e1det_A6A7_0 e1det_A8A7_0 e1det_B7A7_0" cost="1"/>
+  <junction name="B6" detectors="e1det_A6B6_0 e1det_B5B6_0 e1det_B7B6_0 e1det_C6B6_0" cost="1"/>
+  <junction name="A8" detectors="e1det_A7A8_0 e1det_A9A8_0 e1det_B8A8_0" cost="1"/>
+  <junction name="B7" detectors="e1det_A7B7_0 e1det_B6B7_0 e1det_B8B7_0 e1det_C7B7_0" cost="1"/>
+  <junction name="B8" detectors="e1det_A8B8_0 e1det_B7B8_0 e1det_B9B8_0 e1det_C8B8_0" cost="1"/>
+  <junction name="B9" detectors="e1det_A9B9_0 e1det_B8B9_0 e1det_C9B9_0" cost="1"/>
+  <junction name="C0" detectors="e1det_B0C0_0 e1det_C1C0_0 e1det_D0C0_0" cost="1"/>
+  <junction name="0C" detectors="e1det_B10C10_0 e1det_D10C10_0 e1det_C10C11_0 e1det_C20C19_0 e1det_B20C20_0 e1det_D20C20_0 e1det_C20C21_0 e1det_C10C9_0" cost="1"/>
+  <junction name="1C" detectors="e1det_C11C10_0 e1det_B11C11_0 e1det_D11C11_0 e1det_C11C12_0 e1det_C21C20_0 e1det_B21C21_0 e1det_D21C21_0 e1det_C21C22_0" cost="1"/>
+  <junction name="C1" detectors="e1det_C9C10_0 e1det_B1C1_0 e1det_C0C1_0 e1det_C2C1_0 e1det_D1C1_0" cost="1"/>
+  <junction name="2C" detectors="e1det_C12C11_0 e1det_B12C12_0 e1det_D12C12_0 e1det_C12C13_0 e1det_C22C21_0 e1det_B22C22_0 e1det_D22C22_0 e1det_C22C23_0" cost="1"/>
+  <junction name="3C" detectors="e1det_C13C12_0 e1det_B13C13_0 e1det_D13C13_0 e1det_C13C14_0 e1det_C23C22_0 e1det_B23C23_0 e1det_D23C23_0 e1det_C23C24_0" cost="1"/>
+  <junction name="4C" detectors="e1det_C14C13_0 e1det_B14C14_0 e1det_D14C14_0 e1det_C14C15_0 e1det_C24C23_0 e1det_B24C24_0 e1det_D24C24_0 e1det_C24C25_0" cost="1"/>
+  <junction name="5C" detectors="e1det_C15C14_0 e1det_B15C15_0 e1det_D15C15_0 e1det_C15C16_0 e1det_C25C24_0 e1det_B25C25_0 e1det_D25C25_0 e1det_C25C26_0" cost="1"/>
+  <junction name="6C" detectors="e1det_C16C15_0 e1det_B16C16_0 e1det_D16C16_0 e1det_C16C17_0 e1det_C26C25_0 e1det_B26C26_0 e1det_D26C26_0 e1det_C26C27_0" cost="1"/>
+  <junction name="7C" detectors="e1det_C17C16_0 e1det_B17C17_0 e1det_D17C17_0 e1det_C17C18_0 e1det_C27C26_0 e1det_B27C27_0 e1det_D27C27_0 e1det_C27C28_0" cost="1"/>
+  <junction name="8C" detectors="e1det_C18C17_0 e1det_B18C18_0 e1det_D18C18_0 e1det_C18C19_0 e1det_C28C27_0 e1det_B28C28_0 e1det_D28C28_0 e1det_C28C29_0" cost="1"/>
+  <junction name="9C" detectors="e1det_C19C18_0 e1det_B19C19_0 e1det_D19C19_0 e1det_C19C20_0 e1det_C29C28_0 e1det_B29C29_0 e1det_D29C29_0" cost="1"/>
+  <junction name="C2" detectors="e1det_B2C2_0 e1det_C1C2_0 e1det_C3C2_0 e1det_D2C2_0" cost="1"/>
+  <junction name="C3" detectors="e1det_B3C3_0 e1det_C2C3_0 e1det_C4C3_0 e1det_D3C3_0" cost="1"/>
+  <junction name="C4" detectors="e1det_B4C4_0 e1det_C3C4_0 e1det_C5C4_0 e1det_D4C4_0" cost="1"/>
+  <junction name="C5" detectors="e1det_B5C5_0 e1det_C4C5_0 e1det_C6C5_0 e1det_D5C5_0" cost="1"/>
+  <junction name="C6" detectors="e1det_B6C6_0 e1det_C5C6_0 e1det_C7C6_0 e1det_D6C6_0" cost="1"/>
+  <junction name="C7" detectors="e1det_B7C7_0 e1det_C6C7_0 e1det_C8C7_0 e1det_D7C7_0" cost="1"/>
+  <junction name="C8" detectors="e1det_B8C8_0 e1det_C7C8_0 e1det_C9C8_0 e1det_D8C8_0" cost="1"/>
+  <junction name="C9" detectors="e1det_B9C9_0 e1det_C8C9_0 e1det_D9C9_0" cost="1"/>
+  <junction name="D0" detectors="e1det_C0D0_0 e1det_D1D0_0 e1det_E0D0_0" cost="1"/>
+  <junction name="0D" detectors="e1det_C10D10_0 e1det_E10D10_0 e1det_D10D11_0 e1det_D20D19_0 e1det_C20D20_0 e1det_E20D20_0 e1det_D20D21_0 e1det_D10D9_0" cost="1"/>
+  <junction name="1D" detectors="e1det_D11D10_0 e1det_C11D11_0 e1det_E11D11_0 e1det_D11D12_0 e1det_D21D20_0 e1det_C21D21_0 e1det_E21D21_0 e1det_D21D22_0" cost="1"/>
+  <junction name="D1" detectors="e1det_D9D10_0 e1det_C1D1_0 e1det_D0D1_0 e1det_D2D1_0 e1det_E1D1_0" cost="1"/>
+  <junction name="2D" detectors="e1det_D12D11_0 e1det_C12D12_0 e1det_E12D12_0 e1det_D12D13_0 e1det_D22D21_0 e1det_C22D22_0 e1det_E22D22_0 e1det_D22D23_0" cost="1"/>
+  <junction name="3D" detectors="e1det_D13D12_0 e1det_C13D13_0 e1det_E13D13_0 e1det_D13D14_0 e1det_D23D22_0 e1det_C23D23_0 e1det_E23D23_0 e1det_D23D24_0" cost="1"/>
+  <junction name="4D" detectors="e1det_D14D13_0 e1det_C14D14_0 e1det_E14D14_0 e1det_D14D15_0 e1det_D24D23_0 e1det_C24D24_0 e1det_E24D24_0 e1det_D24D25_0" cost="1"/>
+  <junction name="5D" detectors="e1det_D15D14_0 e1det_C15D15_0 e1det_E15D15_0 e1det_D15D16_0 e1det_D25D24_0 e1det_C25D25_0 e1det_E25D25_0 e1det_D25D26_0" cost="1"/>
+  <junction name="6D" detectors="e1det_D16D15_0 e1det_C16D16_0 e1det_E16D16_0 e1det_D16D17_0 e1det_D26D25_0 e1det_C26D26_0 e1det_E26D26_0 e1det_D26D27_0" cost="1"/>
+  <junction name="7D" detectors="e1det_D17D16_0 e1det_C17D17_0 e1det_E17D17_0 e1det_D17D18_0 e1det_D27D26_0 e1det_C27D27_0 e1det_E27D27_0 e1det_D27D28_0" cost="1"/>
+  <junction name="8D" detectors="e1det_D18D17_0 e1det_C18D18_0 e1det_E18D18_0 e1det_D18D19_0 e1det_D28D27_0 e1det_C28D28_0 e1det_E28D28_0 e1det_D28D29_0" cost="1"/>
+  <junction name="9D" detectors="e1det_D19D18_0 e1det_C19D19_0 e1det_E19D19_0 e1det_D19D20_0 e1det_D29D28_0 e1det_C29D29_0 e1det_E29D29_0" cost="1"/>
+  <junction name="D2" detectors="e1det_C2D2_0 e1det_D1D2_0 e1det_D3D2_0 e1det_E2D2_0" cost="1"/>
+  <junction name="D3" detectors="e1det_C3D3_0 e1det_D2D3_0 e1det_D4D3_0 e1det_E3D3_0" cost="1"/>
+  <junction name="D4" detectors="e1det_C4D4_0 e1det_D3D4_0 e1det_D5D4_0 e1det_E4D4_0" cost="1"/>
+  <junction name="D5" detectors="e1det_C5D5_0 e1det_D4D5_0 e1det_D6D5_0 e1det_E5D5_0" cost="1"/>
+  <junction name="D6" detectors="e1det_C6D6_0 e1det_D5D6_0 e1det_D7D6_0 e1det_E6D6_0" cost="1"/>
+  <junction name="D7" detectors="e1det_C7D7_0 e1det_D6D7_0 e1det_D8D7_0 e1det_E7D7_0" cost="1"/>
+  <junction name="D8" detectors="e1det_C8D8_0 e1det_D7D8_0 e1det_D9D8_0 e1det_E8D8_0" cost="1"/>
+  <junction name="D9" detectors="e1det_C9D9_0 e1det_D8D9_0 e1det_E9D9_0" cost="1"/>
+  <junction name="E0" detectors="e1det_D0E0_0 e1det_E1E0_0 e1det_F0E0_0" cost="1"/>
+  <junction name="0E" detectors="e1det_D10E10_0 e1det_F10E10_0 e1det_E10E11_0 e1det_E20E19_0 e1det_D20E20_0 e1det_F20E20_0 e1det_E20E21_0 e1det_E10E9_0" cost="1"/>
+  <junction name="1E" detectors="e1det_E11E10_0 e1det_D11E11_0 e1det_F11E11_0 e1det_E11E12_0 e1det_E21E20_0 e1det_D21E21_0 e1det_F21E21_0 e1det_E21E22_0" cost="1"/>
+  <junction name="E1" detectors="e1det_E9E10_0 e1det_D1E1_0 e1det_E0E1_0 e1det_E2E1_0 e1det_F1E1_0" cost="1"/>
+  <junction name="2E" detectors="e1det_E12E11_0 e1det_D12E12_0 e1det_F12E12_0 e1det_E12E13_0 e1det_E22E21_0 e1det_D22E22_0 e1det_F22E22_0 e1det_E22E23_0" cost="1"/>
+  <junction name="3E" detectors="e1det_E13E12_0 e1det_D13E13_0 e1det_F13E13_0 e1det_E13E14_0 e1det_E23E22_0 e1det_D23E23_0 e1det_F23E23_0 e1det_E23E24_0" cost="1"/>
+  <junction name="4E" detectors="e1det_E14E13_0 e1det_D14E14_0 e1det_F14E14_0 e1det_E14E15_0 e1det_E24E23_0 e1det_D24E24_0 e1det_F24E24_0 e1det_E24E25_0" cost="1"/>
+  <junction name="5E" detectors="e1det_E15E14_0 e1det_D15E15_0 e1det_F15E15_0 e1det_E15E16_0 e1det_E25E24_0 e1det_D25E25_0 e1det_F25E25_0 e1det_E25E26_0" cost="1"/>
+  <junction name="6E" detectors="e1det_E16E15_0 e1det_D16E16_0 e1det_F16E16_0 e1det_E16E17_0 e1det_E26E25_0 e1det_D26E26_0 e1det_F26E26_0 e1det_E26E27_0" cost="1"/>
+  <junction name="7E" detectors="e1det_E17E16_0 e1det_D17E17_0 e1det_F17E17_0 e1det_E17E18_0 e1det_E27E26_0 e1det_D27E27_0 e1det_F27E27_0 e1det_E27E28_0" cost="1"/>
+  <junction name="8E" detectors="e1det_E18E17_0 e1det_D18E18_0 e1det_F18E18_0 e1det_E18E19_0 e1det_E28E27_0 e1det_D28E28_0 e1det_F28E28_0 e1det_E28E29_0" cost="1"/>
+  <junction name="9E" detectors="e1det_E19E18_0 e1det_D19E19_0 e1det_F19E19_0 e1det_E19E20_0 e1det_E29E28_0 e1det_D29E29_0 e1det_F29E29_0" cost="1"/>
+  <junction name="E2" detectors="e1det_D2E2_0 e1det_E1E2_0 e1det_E3E2_0 e1det_F2E2_0" cost="1"/>
+  <junction name="E3" detectors="e1det_D3E3_0 e1det_E2E3_0 e1det_E4E3_0 e1det_F3E3_0" cost="1"/>
+  <junction name="E4" detectors="e1det_D4E4_0 e1det_E3E4_0 e1det_E5E4_0 e1det_F4E4_0" cost="1"/>
+  <junction name="E5" detectors="e1det_D5E5_0 e1det_E4E5_0 e1det_E6E5_0 e1det_F5E5_0" cost="1"/>
+  <junction name="E6" detectors="e1det_D6E6_0 e1det_E5E6_0 e1det_E7E6_0 e1det_F6E6_0" cost="1"/>
+  <junction name="E7" detectors="e1det_D7E7_0 e1det_E6E7_0 e1det_E8E7_0 e1det_F7E7_0" cost="1"/>
+  <junction name="E8" detectors="e1det_D8E8_0 e1det_E7E8_0 e1det_E9E8_0 e1det_F8E8_0" cost="1"/>
+  <junction name="E9" detectors="e1det_D9E9_0 e1det_E8E9_0 e1det_F9E9_0" cost="1"/>
+  <junction name="F0" detectors="e1det_E0F0_0 e1det_F1F0_0 e1det_G0F0_0" cost="1"/>
+  <junction name="0F" detectors="e1det_E10F10_0 e1det_G10F10_0 e1det_F10F11_0 e1det_F20F19_0 e1det_E20F20_0 e1det_G20F20_0 e1det_F20F21_0 e1det_F10F9_0" cost="1"/>
+  <junction name="1F" detectors="e1det_F11F10_0 e1det_E11F11_0 e1det_G11F11_0 e1det_F11F12_0 e1det_F21F20_0 e1det_E21F21_0 e1det_G21F21_0 e1det_F21F22_0" cost="1"/>
+  <junction name="F1" detectors="e1det_F9F10_0 e1det_E1F1_0 e1det_F0F1_0 e1det_F2F1_0 e1det_G1F1_0" cost="1"/>
+  <junction name="2F" detectors="e1det_F12F11_0 e1det_E12F12_0 e1det_G12F12_0 e1det_F12F13_0 e1det_F22F21_0 e1det_E22F22_0 e1det_G22F22_0 e1det_F22F23_0" cost="1"/>
+  <junction name="3F" detectors="e1det_F13F12_0 e1det_E13F13_0 e1det_G13F13_0 e1det_F13F14_0 e1det_F23F22_0 e1det_E23F23_0 e1det_G23F23_0 e1det_F23F24_0" cost="1"/>
+  <junction name="4F" detectors="e1det_F14F13_0 e1det_E14F14_0 e1det_G14F14_0 e1det_F14F15_0 e1det_F24F23_0 e1det_E24F24_0 e1det_G24F24_0 e1det_F24F25_0" cost="1"/>
+  <junction name="5F" detectors="e1det_F15F14_0 e1det_E15F15_0 e1det_G15F15_0 e1det_F15F16_0 e1det_F25F24_0 e1det_E25F25_0 e1det_G25F25_0 e1det_F25F26_0" cost="1"/>
+  <junction name="6F" detectors="e1det_F16F15_0 e1det_E16F16_0 e1det_G16F16_0 e1det_F16F17_0 e1det_F26F25_0 e1det_E26F26_0 e1det_G26F26_0 e1det_F26F27_0" cost="1"/>
+  <junction name="7F" detectors="e1det_F17F16_0 e1det_E17F17_0 e1det_G17F17_0 e1det_F17F18_0 e1det_F27F26_0 e1det_E27F27_0 e1det_G27F27_0 e1det_F27F28_0" cost="1"/>
+  <junction name="8F" detectors="e1det_F18F17_0 e1det_E18F18_0 e1det_G18F18_0 e1det_F18F19_0 e1det_F28F27_0 e1det_E28F28_0 e1det_G28F28_0 e1det_F28F29_0" cost="1"/>
+  <junction name="9F" detectors="e1det_F19F18_0 e1det_E19F19_0 e1det_G19F19_0 e1det_F19F20_0 e1det_F29F28_0 e1det_E29F29_0 e1det_G29F29_0" cost="1"/>
+  <junction name="F2" detectors="e1det_E2F2_0 e1det_F1F2_0 e1det_F3F2_0 e1det_G2F2_0" cost="1"/>
+  <junction name="F3" detectors="e1det_E3F3_0 e1det_F2F3_0 e1det_F4F3_0 e1det_G3F3_0" cost="1"/>
+  <junction name="F4" detectors="e1det_E4F4_0 e1det_F3F4_0 e1det_F5F4_0 e1det_G4F4_0" cost="1"/>
+  <junction name="F5" detectors="e1det_E5F5_0 e1det_F4F5_0 e1det_F6F5_0 e1det_G5F5_0" cost="1"/>
+  <junction name="F6" detectors="e1det_E6F6_0 e1det_F5F6_0 e1det_F7F6_0 e1det_G6F6_0" cost="1"/>
+  <junction name="F7" detectors="e1det_E7F7_0 e1det_F6F7_0 e1det_F8F7_0 e1det_G7F7_0" cost="1"/>
+  <junction name="F8" detectors="e1det_E8F8_0 e1det_F7F8_0 e1det_F9F8_0 e1det_G8F8_0" cost="1"/>
+  <junction name="F9" detectors="e1det_E9F9_0 e1det_F8F9_0 e1det_G9F9_0" cost="1"/>
+  <junction name="G0" detectors="e1det_F0G0_0 e1det_G1G0_0 e1det_H0G0_0" cost="1"/>
+  <junction name="0G" detectors="e1det_F10G10_0 e1det_H10G10_0 e1det_G10G11_0 e1det_G20G19_0 e1det_F20G20_0 e1det_H20G20_0 e1det_G20G21_0 e1det_G10G9_0" cost="1"/>
+  <junction name="1G" detectors="e1det_G11G10_0 e1det_F11G11_0 e1det_H11G11_0 e1det_G11G12_0 e1det_G21G20_0 e1det_F21G21_0 e1det_H21G21_0 e1det_G21G22_0" cost="1"/>
+  <junction name="G1" detectors="e1det_G9G10_0 e1det_F1G1_0 e1det_G0G1_0 e1det_G2G1_0 e1det_H1G1_0" cost="1"/>
+  <junction name="2G" detectors="e1det_G12G11_0 e1det_F12G12_0 e1det_H12G12_0 e1det_G12G13_0 e1det_G22G21_0 e1det_F22G22_0 e1det_H22G22_0 e1det_G22G23_0" cost="1"/>
+  <junction name="3G" detectors="e1det_G13G12_0 e1det_F13G13_0 e1det_H13G13_0 e1det_G13G14_0 e1det_G23G22_0 e1det_F23G23_0 e1det_H23G23_0 e1det_G23G24_0" cost="1"/>
+  <junction name="4G" detectors="e1det_G14G13_0 e1det_F14G14_0 e1det_H14G14_0 e1det_G14G15_0 e1det_G24G23_0 e1det_F24G24_0 e1det_H24G24_0 e1det_G24G25_0" cost="1"/>
+  <junction name="5G" detectors="e1det_G15G14_0 e1det_F15G15_0 e1det_H15G15_0 e1det_G15G16_0 e1det_G25G24_0 e1det_F25G25_0 e1det_H25G25_0 e1det_G25G26_0" cost="1"/>
+  <junction name="6G" detectors="e1det_G16G15_0 e1det_F16G16_0 e1det_H16G16_0 e1det_G16G17_0 e1det_G26G25_0 e1det_F26G26_0 e1det_H26G26_0 e1det_G26G27_0" cost="1"/>
+  <junction name="7G" detectors="e1det_G17G16_0 e1det_F17G17_0 e1det_H17G17_0 e1det_G17G18_0 e1det_G27G26_0 e1det_F27G27_0 e1det_H27G27_0 e1det_G27G28_0" cost="1"/>
+  <junction name="8G" detectors="e1det_G18G17_0 e1det_F18G18_0 e1det_H18G18_0 e1det_G18G19_0 e1det_G28G27_0 e1det_F28G28_0 e1det_H28G28_0 e1det_G28G29_0" cost="1"/>
+  <junction name="9G" detectors="e1det_G19G18_0 e1det_F19G19_0 e1det_H19G19_0 e1det_G19G20_0 e1det_G29G28_0 e1det_F29G29_0 e1det_H29G29_0" cost="1"/>
+  <junction name="G2" detectors="e1det_F2G2_0 e1det_G1G2_0 e1det_G3G2_0 e1det_H2G2_0" cost="1"/>
+  <junction name="G3" detectors="e1det_F3G3_0 e1det_G2G3_0 e1det_G4G3_0 e1det_H3G3_0" cost="1"/>
+  <junction name="G4" detectors="e1det_F4G4_0 e1det_G3G4_0 e1det_G5G4_0 e1det_H4G4_0" cost="1"/>
+  <junction name="G5" detectors="e1det_F5G5_0 e1det_G4G5_0 e1det_G6G5_0 e1det_H5G5_0" cost="1"/>
+  <junction name="G6" detectors="e1det_F6G6_0 e1det_G5G6_0 e1det_G7G6_0 e1det_H6G6_0" cost="1"/>
+  <junction name="G7" detectors="e1det_F7G7_0 e1det_G6G7_0 e1det_G8G7_0 e1det_H7G7_0" cost="1"/>
+  <junction name="G8" detectors="e1det_F8G8_0 e1det_G7G8_0 e1det_G9G8_0 e1det_H8G8_0" cost="1"/>
+  <junction name="G9" detectors="e1det_F9G9_0 e1det_G8G9_0 e1det_H9G9_0" cost="1"/>
+  <junction name="H0" detectors="e1det_G0H0_0 e1det_H1H0_0 e1det_I0H0_0" cost="1"/>
+  <junction name="0H" detectors="e1det_G10H10_0 e1det_I10H10_0 e1det_H10H11_0 e1det_H20H19_0 e1det_G20H20_0 e1det_I20H20_0 e1det_H20H21_0 e1det_H10H9_0" cost="1"/>
+  <junction name="1H" detectors="e1det_H11H10_0 e1det_G11H11_0 e1det_I11H11_0 e1det_H11H12_0 e1det_H21H20_0 e1det_G21H21_0 e1det_I21H21_0 e1det_H21H22_0" cost="1"/>
+  <junction name="H1" detectors="e1det_H9H10_0 e1det_G1H1_0 e1det_H0H1_0 e1det_H2H1_0 e1det_I1H1_0" cost="1"/>
+  <junction name="2H" detectors="e1det_H12H11_0 e1det_G12H12_0 e1det_I12H12_0 e1det_H12H13_0 e1det_H22H21_0 e1det_G22H22_0 e1det_I22H22_0 e1det_H22H23_0" cost="1"/>
+  <junction name="3H" detectors="e1det_H13H12_0 e1det_G13H13_0 e1det_I13H13_0 e1det_H13H14_0 e1det_H23H22_0 e1det_G23H23_0 e1det_I23H23_0 e1det_H23H24_0" cost="1"/>
+  <junction name="4H" detectors="e1det_H14H13_0 e1det_G14H14_0 e1det_I14H14_0 e1det_H14H15_0 e1det_H24H23_0 e1det_G24H24_0 e1det_I24H24_0 e1det_H24H25_0" cost="1"/>
+  <junction name="5H" detectors="e1det_H15H14_0 e1det_G15H15_0 e1det_I15H15_0 e1det_H15H16_0 e1det_H25H24_0 e1det_G25H25_0 e1det_I25H25_0 e1det_H25H26_0" cost="1"/>
+  <junction name="6H" detectors="e1det_H16H15_0 e1det_G16H16_0 e1det_I16H16_0 e1det_H16H17_0 e1det_H26H25_0 e1det_G26H26_0 e1det_I26H26_0 e1det_H26H27_0" cost="1"/>
+  <junction name="7H" detectors="e1det_H17H16_0 e1det_G17H17_0 e1det_I17H17_0 e1det_H17H18_0 e1det_H27H26_0 e1det_G27H27_0 e1det_I27H27_0 e1det_H27H28_0" cost="1"/>
+  <junction name="8H" detectors="e1det_H18H17_0 e1det_G18H18_0 e1det_I18H18_0 e1det_H18H19_0 e1det_H28H27_0 e1det_G28H28_0 e1det_I28H28_0 e1det_H28H29_0" cost="1"/>
+  <junction name="9H" detectors="e1det_H19H18_0 e1det_G19H19_0 e1det_I19H19_0 e1det_H19H20_0 e1det_H29H28_0 e1det_G29H29_0 e1det_I29H29_0" cost="1"/>
+  <junction name="H2" detectors="e1det_G2H2_0 e1det_H1H2_0 e1det_H3H2_0 e1det_I2H2_0" cost="1"/>
+  <junction name="H3" detectors="e1det_G3H3_0 e1det_H2H3_0 e1det_H4H3_0 e1det_I3H3_0" cost="1"/>
+  <junction name="H4" detectors="e1det_G4H4_0 e1det_H3H4_0 e1det_H5H4_0 e1det_I4H4_0" cost="1"/>
+  <junction name="H5" detectors="e1det_G5H5_0 e1det_H4H5_0 e1det_H6H5_0 e1det_I5H5_0" cost="1"/>
+  <junction name="H6" detectors="e1det_G6H6_0 e1det_H5H6_0 e1det_H7H6_0 e1det_I6H6_0" cost="1"/>
+  <junction name="H7" detectors="e1det_G7H7_0 e1det_H6H7_0 e1det_H8H7_0 e1det_I7H7_0" cost="1"/>
+  <junction name="H8" detectors="e1det_G8H8_0 e1det_H7H8_0 e1det_H9H8_0 e1det_I8H8_0" cost="1"/>
+  <junction name="H9" detectors="e1det_G9H9_0 e1det_H8H9_0 e1det_I9H9_0" cost="1"/>
+  <junction name="I0" detectors="e1det_H0I0_0 e1det_I1I0_0 e1det_J0I0_0" cost="1"/>
+  <junction name="0I" detectors="e1det_H10I10_0 e1det_J10I10_0 e1det_I10I11_0 e1det_I20I19_0 e1det_H20I20_0 e1det_J20I20_0 e1det_I20I21_0 e1det_I10I9_0" cost="1"/>
+  <junction name="1I" detectors="e1det_I11I10_0 e1det_H11I11_0 e1det_J11I11_0 e1det_I11I12_0 e1det_I21I20_0 e1det_H21I21_0 e1det_J21I21_0 e1det_I21I22_0" cost="1"/>
+  <junction name="I1" detectors="e1det_I9I10_0 e1det_H1I1_0 e1det_I0I1_0 e1det_I2I1_0 e1det_J1I1_0" cost="1"/>
+  <junction name="2I" detectors="e1det_I12I11_0 e1det_H12I12_0 e1det_J12I12_0 e1det_I12I13_0 e1det_I22I21_0 e1det_H22I22_0 e1det_J22I22_0 e1det_I22I23_0" cost="1"/>
+  <junction name="3I" detectors="e1det_I13I12_0 e1det_H13I13_0 e1det_J13I13_0 e1det_I13I14_0 e1det_I23I22_0 e1det_H23I23_0 e1det_J23I23_0 e1det_I23I24_0" cost="1"/>
+  <junction name="4I" detectors="e1det_I14I13_0 e1det_H14I14_0 e1det_J14I14_0 e1det_I14I15_0 e1det_I24I23_0 e1det_H24I24_0 e1det_J24I24_0 e1det_I24I25_0" cost="1"/>
+  <junction name="5I" detectors="e1det_I15I14_0 e1det_H15I15_0 e1det_J15I15_0 e1det_I15I16_0 e1det_I25I24_0 e1det_H25I25_0 e1det_J25I25_0 e1det_I25I26_0" cost="1"/>
+  <junction name="6I" detectors="e1det_I16I15_0 e1det_H16I16_0 e1det_J16I16_0 e1det_I16I17_0 e1det_I26I25_0 e1det_H26I26_0 e1det_J26I26_0 e1det_I26I27_0" cost="1"/>
+  <junction name="7I" detectors="e1det_I17I16_0 e1det_H17I17_0 e1det_J17I17_0 e1det_I17I18_0 e1det_I27I26_0 e1det_H27I27_0 e1det_J27I27_0 e1det_I27I28_0" cost="1"/>
+  <junction name="8I" detectors="e1det_I18I17_0 e1det_H18I18_0 e1det_J18I18_0 e1det_I18I19_0 e1det_I28I27_0 e1det_H28I28_0 e1det_J28I28_0 e1det_I28I29_0" cost="1"/>
+  <junction name="9I" detectors="e1det_I19I18_0 e1det_H19I19_0 e1det_J19I19_0 e1det_I19I20_0 e1det_I29I28_0 e1det_H29I29_0 e1det_J29I29_0" cost="1"/>
+  <junction name="I2" detectors="e1det_H2I2_0 e1det_I1I2_0 e1det_I3I2_0 e1det_J2I2_0" cost="1"/>
+  <junction name="I3" detectors="e1det_H3I3_0 e1det_I2I3_0 e1det_I4I3_0 e1det_J3I3_0" cost="1"/>
+  <junction name="I4" detectors="e1det_H4I4_0 e1det_I3I4_0 e1det_I5I4_0 e1det_J4I4_0" cost="1"/>
+  <junction name="I5" detectors="e1det_H5I5_0 e1det_I4I5_0 e1det_I6I5_0 e1det_J5I5_0" cost="1"/>
+  <junction name="I6" detectors="e1det_H6I6_0 e1det_I5I6_0 e1det_I7I6_0 e1det_J6I6_0" cost="1"/>
+  <junction name="I7" detectors="e1det_H7I7_0 e1det_I6I7_0 e1det_I8I7_0 e1det_J7I7_0" cost="1"/>
+  <junction name="I8" detectors="e1det_H8I8_0 e1det_I7I8_0 e1det_I9I8_0 e1det_J8I8_0" cost="1"/>
+  <junction name="I9" detectors="e1det_H9I9_0 e1det_I8I9_0 e1det_J9I9_0" cost="1"/>
+  <junction name="J0" detectors="e1det_I0J0_0 e1det_J1J0_0 e1det_K0J0_0" cost="1"/>
+  <junction name="0J" detectors="e1det_I10J10_0 e1det_K10J10_0 e1det_J10J11_0 e1det_J20J19_0 e1det_I20J20_0 e1det_K20J20_0 e1det_J20J21_0 e1det_J10J9_0" cost="1"/>
+  <junction name="1J" detectors="e1det_J11J10_0 e1det_I11J11_0 e1det_K11J11_0 e1det_J11J12_0 e1det_J21J20_0 e1det_I21J21_0 e1det_K21J21_0 e1det_J21J22_0" cost="1"/>
+  <junction name="J1" detectors="e1det_J9J10_0 e1det_I1J1_0 e1det_J0J1_0 e1det_J2J1_0 e1det_K1J1_0" cost="1"/>
+  <junction name="2J" detectors="e1det_J12J11_0 e1det_I12J12_0 e1det_K12J12_0 e1det_J12J13_0 e1det_J22J21_0 e1det_I22J22_0 e1det_K22J22_0 e1det_J22J23_0" cost="1"/>
+  <junction name="3J" detectors="e1det_J13J12_0 e1det_I13J13_0 e1det_K13J13_0 e1det_J13J14_0 e1det_J23J22_0 e1det_I23J23_0 e1det_K23J23_0 e1det_J23J24_0" cost="1"/>
+  <junction name="4J" detectors="e1det_J14J13_0 e1det_I14J14_0 e1det_K14J14_0 e1det_J14J15_0 e1det_J24J23_0 e1det_I24J24_0 e1det_K24J24_0 e1det_J24J25_0" cost="1"/>
+  <junction name="5J" detectors="e1det_J15J14_0 e1det_I15J15_0 e1det_K15J15_0 e1det_J15J16_0 e1det_J25J24_0 e1det_I25J25_0 e1det_K25J25_0 e1det_J25J26_0" cost="1"/>
+  <junction name="6J" detectors="e1det_J16J15_0 e1det_I16J16_0 e1det_K16J16_0 e1det_J16J17_0 e1det_J26J25_0 e1det_I26J26_0 e1det_K26J26_0 e1det_J26J27_0" cost="1"/>
+  <junction name="7J" detectors="e1det_J17J16_0 e1det_I17J17_0 e1det_K17J17_0 e1det_J17J18_0 e1det_J27J26_0 e1det_I27J27_0 e1det_K27J27_0 e1det_J27J28_0" cost="1"/>
+  <junction name="8J" detectors="e1det_J18J17_0 e1det_I18J18_0 e1det_K18J18_0 e1det_J18J19_0 e1det_J28J27_0 e1det_I28J28_0 e1det_K28J28_0 e1det_J28J29_0" cost="1"/>
+  <junction name="9J" detectors="e1det_J19J18_0 e1det_I19J19_0 e1det_K19J19_0 e1det_J19J20_0 e1det_J29J28_0 e1det_I29J29_0 e1det_K29J29_0" cost="1"/>
+  <junction name="J2" detectors="e1det_I2J2_0 e1det_J1J2_0 e1det_J3J2_0 e1det_K2J2_0" cost="1"/>
+  <junction name="J3" detectors="e1det_I3J3_0 e1det_J2J3_0 e1det_J4J3_0 e1det_K3J3_0" cost="1"/>
+  <junction name="J4" detectors="e1det_I4J4_0 e1det_J3J4_0 e1det_J5J4_0 e1det_K4J4_0" cost="1"/>
+  <junction name="J5" detectors="e1det_I5J5_0 e1det_J4J5_0 e1det_J6J5_0 e1det_K5J5_0" cost="1"/>
+  <junction name="J6" detectors="e1det_I6J6_0 e1det_J5J6_0 e1det_J7J6_0 e1det_K6J6_0" cost="1"/>
+  <junction name="J7" detectors="e1det_I7J7_0 e1det_J6J7_0 e1det_J8J7_0 e1det_K7J7_0" cost="1"/>
+  <junction name="J8" detectors="e1det_I8J8_0 e1det_J7J8_0 e1det_J9J8_0 e1det_K8J8_0" cost="1"/>
+  <junction name="J9" detectors="e1det_I9J9_0 e1det_J8J9_0 e1det_K9J9_0" cost="1"/>
+  <junction name="K0" detectors="e1det_J0K0_0 e1det_K1K0_0 e1det_L0K0_0" cost="1"/>
+  <junction name="0K" detectors="e1det_J10K10_0 e1det_L10K10_0 e1det_K10K11_0 e1det_K20K19_0 e1det_J20K20_0 e1det_L20K20_0 e1det_K20K21_0 e1det_K10K9_0" cost="1"/>
+  <junction name="1K" detectors="e1det_K11K10_0 e1det_J11K11_0 e1det_L11K11_0 e1det_K11K12_0 e1det_K21K20_0 e1det_J21K21_0 e1det_L21K21_0 e1det_K21K22_0" cost="1"/>
+  <junction name="K1" detectors="e1det_K9K10_0 e1det_J1K1_0 e1det_K0K1_0 e1det_K2K1_0 e1det_L1K1_0" cost="1"/>
+  <junction name="2K" detectors="e1det_K12K11_0 e1det_J12K12_0 e1det_L12K12_0 e1det_K12K13_0 e1det_K22K21_0 e1det_J22K22_0 e1det_L22K22_0 e1det_K22K23_0" cost="1"/>
+  <junction name="3K" detectors="e1det_K13K12_0 e1det_J13K13_0 e1det_L13K13_0 e1det_K13K14_0 e1det_K23K22_0 e1det_J23K23_0 e1det_L23K23_0 e1det_K23K24_0" cost="1"/>
+  <junction name="4K" detectors="e1det_K14K13_0 e1det_J14K14_0 e1det_L14K14_0 e1det_K14K15_0 e1det_K24K23_0 e1det_J24K24_0 e1det_L24K24_0 e1det_K24K25_0" cost="1"/>
+  <junction name="5K" detectors="e1det_K15K14_0 e1det_J15K15_0 e1det_L15K15_0 e1det_K15K16_0 e1det_K25K24_0 e1det_J25K25_0 e1det_L25K25_0 e1det_K25K26_0" cost="1"/>
+  <junction name="6K" detectors="e1det_K16K15_0 e1det_J16K16_0 e1det_L16K16_0 e1det_K16K17_0 e1det_K26K25_0 e1det_J26K26_0 e1det_L26K26_0 e1det_K26K27_0" cost="1"/>
+  <junction name="7K" detectors="e1det_K17K16_0 e1det_J17K17_0 e1det_L17K17_0 e1det_K17K18_0 e1det_K27K26_0 e1det_J27K27_0 e1det_L27K27_0 e1det_K27K28_0" cost="1"/>
+  <junction name="8K" detectors="e1det_K18K17_0 e1det_J18K18_0 e1det_L18K18_0 e1det_K18K19_0 e1det_K28K27_0 e1det_J28K28_0 e1det_L28K28_0 e1det_K28K29_0" cost="1"/>
+  <junction name="9K" detectors="e1det_K19K18_0 e1det_J19K19_0 e1det_L19K19_0 e1det_K19K20_0 e1det_K29K28_0 e1det_J29K29_0 e1det_L29K29_0" cost="1"/>
+  <junction name="K2" detectors="e1det_J2K2_0 e1det_K1K2_0 e1det_K3K2_0 e1det_L2K2_0" cost="1"/>
+  <junction name="K3" detectors="e1det_J3K3_0 e1det_K2K3_0 e1det_K4K3_0 e1det_L3K3_0" cost="1"/>
+  <junction name="K4" detectors="e1det_J4K4_0 e1det_K3K4_0 e1det_K5K4_0 e1det_L4K4_0" cost="1"/>
+  <junction name="K5" detectors="e1det_J5K5_0 e1det_K4K5_0 e1det_K6K5_0 e1det_L5K5_0" cost="1"/>
+  <junction name="K6" detectors="e1det_J6K6_0 e1det_K5K6_0 e1det_K7K6_0 e1det_L6K6_0" cost="1"/>
+  <junction name="K7" detectors="e1det_J7K7_0 e1det_K6K7_0 e1det_K8K7_0 e1det_L7K7_0" cost="1"/>
+  <junction name="K8" detectors="e1det_J8K8_0 e1det_K7K8_0 e1det_K9K8_0 e1det_L8K8_0" cost="1"/>
+  <junction name="K9" detectors="e1det_J9K9_0 e1det_K8K9_0 e1det_L9K9_0" cost="1"/>
+  <junction name="L0" detectors="e1det_K0L0_0 e1det_L1L0_0 e1det_M0L0_0" cost="1"/>
+  <junction name="0L" detectors="e1det_K10L10_0 e1det_M10L10_0 e1det_L10L11_0 e1det_L20L19_0 e1det_K20L20_0 e1det_M20L20_0 e1det_L20L21_0 e1det_L10L9_0" cost="1"/>
+  <junction name="1L" detectors="e1det_L11L10_0 e1det_K11L11_0 e1det_M11L11_0 e1det_L11L12_0 e1det_L21L20_0 e1det_K21L21_0 e1det_M21L21_0 e1det_L21L22_0" cost="1"/>
+  <junction name="L1" detectors="e1det_L9L10_0 e1det_K1L1_0 e1det_L0L1_0 e1det_L2L1_0 e1det_M1L1_0" cost="1"/>
+  <junction name="2L" detectors="e1det_L12L11_0 e1det_K12L12_0 e1det_M12L12_0 e1det_L12L13_0 e1det_L22L21_0 e1det_K22L22_0 e1det_M22L22_0 e1det_L22L23_0" cost="1"/>
+  <junction name="3L" detectors="e1det_L13L12_0 e1det_K13L13_0 e1det_M13L13_0 e1det_L13L14_0 e1det_L23L22_0 e1det_K23L23_0 e1det_M23L23_0 e1det_L23L24_0" cost="1"/>
+  <junction name="4L" detectors="e1det_L14L13_0 e1det_K14L14_0 e1det_M14L14_0 e1det_L14L15_0 e1det_L24L23_0 e1det_K24L24_0 e1det_M24L24_0 e1det_L24L25_0" cost="1"/>
+  <junction name="5L" detectors="e1det_L15L14_0 e1det_K15L15_0 e1det_M15L15_0 e1det_L15L16_0 e1det_L25L24_0 e1det_K25L25_0 e1det_M25L25_0 e1det_L25L26_0" cost="1"/>
+  <junction name="6L" detectors="e1det_L16L15_0 e1det_K16L16_0 e1det_M16L16_0 e1det_L16L17_0 e1det_L26L25_0 e1det_K26L26_0 e1det_M26L26_0 e1det_L26L27_0" cost="1"/>
+  <junction name="7L" detectors="e1det_L17L16_0 e1det_K17L17_0 e1det_M17L17_0 e1det_L17L18_0 e1det_L27L26_0 e1det_K27L27_0 e1det_M27L27_0 e1det_L27L28_0" cost="1"/>
+  <junction name="8L" detectors="e1det_L18L17_0 e1det_K18L18_0 e1det_M18L18_0 e1det_L18L19_0 e1det_L28L27_0 e1det_K28L28_0 e1det_M28L28_0 e1det_L28L29_0" cost="1"/>
+  <junction name="9L" detectors="e1det_L19L18_0 e1det_K19L19_0 e1det_M19L19_0 e1det_L19L20_0 e1det_L29L28_0 e1det_K29L29_0 e1det_M29L29_0" cost="1"/>
+  <junction name="L2" detectors="e1det_K2L2_0 e1det_L1L2_0 e1det_L3L2_0 e1det_M2L2_0" cost="1"/>
+  <junction name="L3" detectors="e1det_K3L3_0 e1det_L2L3_0 e1det_L4L3_0 e1det_M3L3_0" cost="1"/>
+  <junction name="L4" detectors="e1det_K4L4_0 e1det_L3L4_0 e1det_L5L4_0 e1det_M4L4_0" cost="1"/>
+  <junction name="L5" detectors="e1det_K5L5_0 e1det_L4L5_0 e1det_L6L5_0 e1det_M5L5_0" cost="1"/>
+  <junction name="L6" detectors="e1det_K6L6_0 e1det_L5L6_0 e1det_L7L6_0 e1det_M6L6_0" cost="1"/>
+  <junction name="L7" detectors="e1det_K7L7_0 e1det_L6L7_0 e1det_L8L7_0 e1det_M7L7_0" cost="1"/>
+  <junction name="L8" detectors="e1det_K8L8_0 e1det_L7L8_0 e1det_L9L8_0 e1det_M8L8_0" cost="1"/>
+  <junction name="L9" detectors="e1det_K9L9_0 e1det_L8L9_0 e1det_M9L9_0" cost="1"/>
+  <junction name="M0" detectors="e1det_L0M0_0 e1det_M1M0_0 e1det_N0M0_0" cost="1"/>
+  <junction name="0M" detectors="e1det_L10M10_0 e1det_N10M10_0 e1det_M10M11_0 e1det_M20M19_0 e1det_L20M20_0 e1det_N20M20_0 e1det_M20M21_0 e1det_M10M9_0" cost="1"/>
+  <junction name="1M" detectors="e1det_M11M10_0 e1det_L11M11_0 e1det_N11M11_0 e1det_M11M12_0 e1det_M21M20_0 e1det_L21M21_0 e1det_N21M21_0 e1det_M21M22_0" cost="1"/>
+  <junction name="M1" detectors="e1det_M9M10_0 e1det_L1M1_0 e1det_M0M1_0 e1det_M2M1_0 e1det_N1M1_0" cost="1"/>
+  <junction name="2M" detectors="e1det_M12M11_0 e1det_L12M12_0 e1det_N12M12_0 e1det_M12M13_0 e1det_M22M21_0 e1det_L22M22_0 e1det_N22M22_0 e1det_M22M23_0" cost="1"/>
+  <junction name="3M" detectors="e1det_M13M12_0 e1det_L13M13_0 e1det_N13M13_0 e1det_M13M14_0 e1det_M23M22_0 e1det_L23M23_0 e1det_N23M23_0 e1det_M23M24_0" cost="1"/>
+  <junction name="4M" detectors="e1det_M14M13_0 e1det_L14M14_0 e1det_N14M14_0 e1det_M14M15_0 e1det_M24M23_0 e1det_L24M24_0 e1det_N24M24_0 e1det_M24M25_0" cost="1"/>
+  <junction name="5M" detectors="e1det_M15M14_0 e1det_L15M15_0 e1det_N15M15_0 e1det_M15M16_0 e1det_M25M24_0 e1det_L25M25_0 e1det_N25M25_0 e1det_M25M26_0" cost="1"/>
+  <junction name="6M" detectors="e1det_M16M15_0 e1det_L16M16_0 e1det_N16M16_0 e1det_M16M17_0 e1det_M26M25_0 e1det_L26M26_0 e1det_N26M26_0 e1det_M26M27_0" cost="1"/>
+  <junction name="7M" detectors="e1det_M17M16_0 e1det_L17M17_0 e1det_N17M17_0 e1det_M17M18_0 e1det_M27M26_0 e1det_L27M27_0 e1det_N27M27_0 e1det_M27M28_0" cost="1"/>
+  <junction name="8M" detectors="e1det_M18M17_0 e1det_L18M18_0 e1det_N18M18_0 e1det_M18M19_0 e1det_M28M27_0 e1det_L28M28_0 e1det_N28M28_0 e1det_M28M29_0" cost="1"/>
+  <junction name="9M" detectors="e1det_M19M18_0 e1det_L19M19_0 e1det_N19M19_0 e1det_M19M20_0 e1det_M29M28_0 e1det_L29M29_0 e1det_N29M29_0" cost="1"/>
+  <junction name="M2" detectors="e1det_L2M2_0 e1det_M1M2_0 e1det_M3M2_0 e1det_N2M2_0" cost="1"/>
+  <junction name="M3" detectors="e1det_L3M3_0 e1det_M2M3_0 e1det_M4M3_0 e1det_N3M3_0" cost="1"/>
+  <junction name="M4" detectors="e1det_L4M4_0 e1det_M3M4_0 e1det_M5M4_0 e1det_N4M4_0" cost="1"/>
+  <junction name="M5" detectors="e1det_L5M5_0 e1det_M4M5_0 e1det_M6M5_0 e1det_N5M5_0" cost="1"/>
+  <junction name="M6" detectors="e1det_L6M6_0 e1det_M5M6_0 e1det_M7M6_0 e1det_N6M6_0" cost="1"/>
+  <junction name="M7" detectors="e1det_L7M7_0 e1det_M6M7_0 e1det_M8M7_0 e1det_N7M7_0" cost="1"/>
+  <junction name="M8" detectors="e1det_L8M8_0 e1det_M7M8_0 e1det_M9M8_0 e1det_N8M8_0" cost="1"/>
+  <junction name="M9" detectors="e1det_L9M9_0 e1det_M8M9_0 e1det_N9M9_0" cost="1"/>
+  <junction name="N0" detectors="e1det_M0N0_0 e1det_N1N0_0 e1det_O0N0_0" cost="1"/>
+  <junction name="0N" detectors="e1det_M10N10_0 e1det_O10N10_0 e1det_N10N11_0 e1det_N20N19_0 e1det_M20N20_0 e1det_O20N20_0 e1det_N20N21_0 e1det_N10N9_0" cost="1"/>
+  <junction name="1N" detectors="e1det_N11N10_0 e1det_M11N11_0 e1det_O11N11_0 e1det_N11N12_0 e1det_N21N20_0 e1det_M21N21_0 e1det_O21N21_0 e1det_N21N22_0" cost="1"/>
+  <junction name="N1" detectors="e1det_N9N10_0 e1det_M1N1_0 e1det_N0N1_0 e1det_N2N1_0 e1det_O1N1_0" cost="1"/>
+  <junction name="2N" detectors="e1det_N12N11_0 e1det_M12N12_0 e1det_O12N12_0 e1det_N12N13_0 e1det_N22N21_0 e1det_M22N22_0 e1det_O22N22_0 e1det_N22N23_0" cost="1"/>
+  <junction name="3N" detectors="e1det_N13N12_0 e1det_M13N13_0 e1det_O13N13_0 e1det_N13N14_0 e1det_N23N22_0 e1det_M23N23_0 e1det_O23N23_0 e1det_N23N24_0" cost="1"/>
+  <junction name="4N" detectors="e1det_N14N13_0 e1det_M14N14_0 e1det_O14N14_0 e1det_N14N15_0 e1det_N24N23_0 e1det_M24N24_0 e1det_O24N24_0 e1det_N24N25_0" cost="1"/>
+  <junction name="5N" detectors="e1det_N15N14_0 e1det_M15N15_0 e1det_O15N15_0 e1det_N15N16_0 e1det_N25N24_0 e1det_M25N25_0 e1det_O25N25_0 e1det_N25N26_0" cost="1"/>
+  <junction name="6N" detectors="e1det_N16N15_0 e1det_M16N16_0 e1det_O16N16_0 e1det_N16N17_0 e1det_N26N25_0 e1det_M26N26_0 e1det_O26N26_0 e1det_N26N27_0" cost="1"/>
+  <junction name="7N" detectors="e1det_N17N16_0 e1det_M17N17_0 e1det_O17N17_0 e1det_N17N18_0 e1det_N27N26_0 e1det_M27N27_0 e1det_O27N27_0 e1det_N27N28_0" cost="1"/>
+  <junction name="8N" detectors="e1det_N18N17_0 e1det_M18N18_0 e1det_O18N18_0 e1det_N18N19_0 e1det_N28N27_0 e1det_M28N28_0 e1det_O28N28_0 e1det_N28N29_0" cost="1"/>
+  <junction name="9N" detectors="e1det_N19N18_0 e1det_M19N19_0 e1det_O19N19_0 e1det_N19N20_0 e1det_N29N28_0 e1det_M29N29_0 e1det_O29N29_0" cost="1"/>
+  <junction name="N2" detectors="e1det_M2N2_0 e1det_N1N2_0 e1det_N3N2_0 e1det_O2N2_0" cost="1"/>
+  <junction name="N3" detectors="e1det_M3N3_0 e1det_N2N3_0 e1det_N4N3_0 e1det_O3N3_0" cost="1"/>
+  <junction name="N4" detectors="e1det_M4N4_0 e1det_N3N4_0 e1det_N5N4_0 e1det_O4N4_0" cost="1"/>
+  <junction name="N5" detectors="e1det_M5N5_0 e1det_N4N5_0 e1det_N6N5_0 e1det_O5N5_0" cost="1"/>
+  <junction name="N6" detectors="e1det_M6N6_0 e1det_N5N6_0 e1det_N7N6_0 e1det_O6N6_0" cost="1"/>
+  <junction name="N7" detectors="e1det_M7N7_0 e1det_N6N7_0 e1det_N8N7_0 e1det_O7N7_0" cost="1"/>
+  <junction name="N8" detectors="e1det_M8N8_0 e1det_N7N8_0 e1det_N9N8_0 e1det_O8N8_0" cost="1"/>
+  <junction name="N9" detectors="e1det_M9N9_0 e1det_N8N9_0 e1det_O9N9_0" cost="1"/>
+  <junction name="O0" detectors="e1det_N0O0_0 e1det_O1O0_0" cost="1"/>
+  <junction name="0O" detectors="e1det_N10O10_0 e1det_O10O11_0 e1det_O20O19_0 e1det_N20O20_0 e1det_O20O21_0 e1det_O10O9_0" cost="1"/>
+  <junction name="1O" detectors="e1det_O11O10_0 e1det_N11O11_0 e1det_O11O12_0 e1det_O21O20_0 e1det_N21O21_0 e1det_O21O22_0" cost="1"/>
+  <junction name="O1" detectors="e1det_O9O10_0 e1det_N1O1_0 e1det_O0O1_0 e1det_O2O1_0" cost="1"/>
+  <junction name="2O" detectors="e1det_O12O11_0 e1det_N12O12_0 e1det_O12O13_0 e1det_O22O21_0 e1det_N22O22_0 e1det_O22O23_0" cost="1"/>
+  <junction name="3O" detectors="e1det_O13O12_0 e1det_N13O13_0 e1det_O13O14_0 e1det_O23O22_0 e1det_N23O23_0 e1det_O23O24_0" cost="1"/>
+  <junction name="4O" detectors="e1det_O14O13_0 e1det_N14O14_0 e1det_O14O15_0 e1det_O24O23_0 e1det_N24O24_0 e1det_O24O25_0" cost="1"/>
+  <junction name="5O" detectors="e1det_O15O14_0 e1det_N15O15_0 e1det_O15O16_0 e1det_O25O24_0 e1det_N25O25_0 e1det_O25O26_0" cost="1"/>
+  <junction name="6O" detectors="e1det_O16O15_0 e1det_N16O16_0 e1det_O16O17_0 e1det_O26O25_0 e1det_N26O26_0 e1det_O26O27_0" cost="1"/>
+  <junction name="7O" detectors="e1det_O17O16_0 e1det_N17O17_0 e1det_O17O18_0 e1det_O27O26_0 e1det_N27O27_0 e1det_O27O28_0" cost="1"/>
+  <junction name="8O" detectors="e1det_O18O17_0 e1det_N18O18_0 e1det_O18O19_0 e1det_O28O27_0 e1det_N28O28_0 e1det_O28O29_0" cost="1"/>
+  <junction name="9O" detectors="e1det_O19O18_0 e1det_N19O19_0 e1det_O19O20_0 e1det_O29O28_0 e1det_N29O29_0" cost="1"/>
+  <junction name="O2" detectors="e1det_N2O2_0 e1det_O1O2_0 e1det_O3O2_0" cost="1"/>
+  <junction name="O3" detectors="e1det_N3O3_0 e1det_O2O3_0 e1det_O4O3_0" cost="1"/>
+  <junction name="O4" detectors="e1det_N4O4_0 e1det_O3O4_0 e1det_O5O4_0" cost="1"/>
+  <junction name="O5" detectors="e1det_N5O5_0 e1det_O4O5_0 e1det_O6O5_0" cost="1"/>
+  <junction name="O6" detectors="e1det_N6O6_0 e1det_O5O6_0 e1det_O7O6_0" cost="1"/>
+  <junction name="O7" detectors="e1det_N7O7_0 e1det_O6O7_0 e1det_O8O7_0" cost="1"/>
+  <junction name="O8" detectors="e1det_N8O8_0 e1det_O7O8_0 e1det_O9O8_0" cost="1"/>
+  <junction name="O9" detectors="e1det_N9O9_0 e1det_O8O9_0" cost="1"/>
+</junctions>

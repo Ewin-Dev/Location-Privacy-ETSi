@@ -1,0 +1,76 @@
+---
+generation:
+  run: True
+  path: ../../agent
+  script: agent_generation.py
+  inpath: ../rsc/traffic/
+  outpath: ../rsc/traffic/
+  agents: 200
+  days: 1
+  parttime: 20                 # percentage of part-time-workers
+  nighttime: 0                 # percentage of night-time-workers
+  mapin: &map 'ingolstadt.xml'
+  net_prefix: 'ingolstadt'
+  homedistrict: '"0,0 300000,0 300000,500000 0,500000"' # polygon which uses sumo coordinates and the points have to counterclockwise
+  workdistrict: '"0,0 300000,0 300000,500000 0,500000"' # polygon which uses sumo coordinates and the points have to counterclockwise
+  # ingolstadt home: '"0,0 300000,0 300000,500000 0,500000"'
+  # ingolstadt work: '"0,0 300000,0 300000,500000 0,500000"'
+  # manhattan home: -10, 2330; 1860, 2330; -10, -15; 1860, -15
+  # manhattan work: 2180, 2330; 3790, 2330; 2180, -15; 3790, -15
+  # spider home: 0, 950; 2000, 950; 0, -5; 2000, -5
+  # spider work: 0, 1950; 2000, 1950; 0, 950; 2000, 950
+  groutesout: &gtripout 'routes.xml'
+  gvehmapout: 'vehicle_map.csv'
+  report: False
+  reportpath: ../rsc/reports/
+  reportname: 'report.txt'
+
+simulation:
+  run: True
+  path: ../../simulation
+  simulator: simulation.py
+  inpath: ../rsc/traffic/
+  outpath: ../rsc/knowledge/
+  mapin: *map
+  sroutesin: *gtripout
+  gui: False
+  junctions: junctions.xml
+  detectors: ingolstadt_detectors.add.xml
+  tripinfo: tripinfo.xml
+  sumocfg: simulation.sumocfg
+  coutput: &scout challenger.xml
+  aoutput: &saout attacker.xml
+  seed: 12345
+  report: True
+  reportpath: ../rsc/reports/
+  reportname: report.txt
+
+attacker:
+  run: False
+  path: ../../attacker                  # path to attacker script
+  attack: attack_random.py              # name of attacker script
+  input: *saout                            # input attacker knowledge (-k argument)
+  output: &aout attack_random.xml                # output file name (-o argument)
+
+attackerAdvanced:
+  run: False
+  path: ../../attacker                  # path to attacker script  
+  attack: attack_advanced.py              # name of attacker script
+  
+  input: *saout                          # input attacker knowledge (-k argument) 
+  output: &aaout attack_advanced.xml     # output file name (-o argument)  
+  simulatedTimes: manh_300_simulated-times.xml    # file with the simulated times
+  simulatedAnnealing: 1                  # number of iterations 
+  report: True
+  reportpath: ../rsc/reports/
+  reportname: report.txt
+
+evaluation:
+  run: False
+  path: ../../challenger                # path to eval script
+  evaluator: evaluation_advanced.py             # name of eval script
+  challenger: *scout                      # input challenger knowledge (-k argument)
+  attacker: *aaout                        # input attacker knowledge (-f argument), references attacker output
+
+report: report.txt
+...
