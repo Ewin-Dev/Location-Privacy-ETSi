@@ -15,3 +15,37 @@ Output file is   'attacks/test_attack.xml'
 
 -------------------- END of report --------------------
 
+-------------------- Report of ADVANCED ATTACK --------------------
+
+Name of attack script:   /home/ewin/PythonProjects/Location Privacy/location-privacy-etsi/attacker/attack_advanced.py
+Attack started at        22/10/2025 14:57:54
+Attack ended at          22/10/2025 14:58:14
+Runtime:                 20.30759620666504
+
+simulated annealing iterations: 2
+simulated annealing result: 712197.9166666666
+Attacker knowledge file is   'spider_100_7_0_attacker.xml'
+- of file size               1161661 bytes
+
+Output file is   'attacks/test_attack.xml'
+- of file size   208933 bytes
+
+-------------------- END of report --------------------
+
+-------------------- Report of ADVANCED ATTACK --------------------
+
+Name of attack script:   /home/ewin/PythonProjects/Location Privacy/location-privacy-etsi/attacker/attack_advanced.py
+Attack started at        23/10/2025 09:27:07
+Attack ended at          23/10/2025 09:27:38
+Runtime:                 31.286298036575317
+
+simulated annealing iterations: 2
+simulated annealing result: 712144.976190476
+Attacker knowledge file is   'spider_100_7_0_attacker.xml'
+- of file size               1161661 bytes
+
+Output file is   'attacks/test_attack.xml'
+- of file size   208933 bytes
+
+-------------------- END of report --------------------
+

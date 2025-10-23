@@ -27,7 +27,7 @@ class Trip:
 
 
 
-#generates a graph with conectet detectors (nodes are the detectors). 
+#generates a graph with connected detectors (nodes are the detectors).
 def generateGraph():
     
     tree_detectors = ET.parse(simulated_times_file)
@@ -61,11 +61,11 @@ def findTrips():
     x=0 #used for the agend names
 
 
-    #go trough every transaction, and try to find a possible trip
-    for i in range(0, len(transactions_attackert_knowlege)):
+    #go through every transaction, and try to find a possible trip
+    for i in range(0, len(transactions_attacker_knowlege)):
 
         #startpoint of the trip
-        transaction= transactions_attackert_knowlege[i]
+        transaction= transactions_attacker_knowlege[i]
         first= True
 
         #string with all detector names, that are used in this trip
@@ -95,7 +95,7 @@ def findTrips():
             #local used transaction ids
             locUsed = []
 
-            # the deviation from the avg. times fome every edge in this trip
+            # the deviation from the avg. times from every edge in this trip
             deltaSum = 0
 
             # list with every delta from this trip
@@ -117,10 +117,10 @@ def findTrips():
                     
                     
                     #find suitable transaction 
-                    for  j in range(inner_start+1 , len(transactions_attackert_knowlege)):
+                    for  j in range(inner_start+1 , len(transactions_attacker_knowlege)):
 
                         #get the informations from the possible next point    
-                        transaction_inner = transactions_attackert_knowlege[j]
+                        transaction_inner = transactions_attacker_knowlege[j]
                         detector_inner = transaction_inner.attrib['detector']
                         id_inner = int(transaction_inner.attrib['id'])
                         timeTrans_inner = int(transaction_inner.attrib['time'])
@@ -135,10 +135,10 @@ def findTrips():
                         # check if id is used and the detector is the right
                         if (detector_inner == v and travel_time >= 0 and travel_time <= 4 * avg and travel_time >= min*0.8  and id_inner not in usedTrans):
                             
-                            #check if differece is plausible
+                            #check if difference is plausible
                             if  travel_time >= 0 and travel_time >= min*0.8 and travel_time <= max * 1.2: 
                                 
-                                # calculate the differnce between the avg. from the simulated times and this
+                                # calculate the difference between the avg. from the simulated times and this
                                 deltaTemp = abs(avg - travel_time)
                                     
                                 #if the new difference is better than the worst (last ) in the array
@@ -210,10 +210,10 @@ def findTrips():
                 x += 1 
 
         
-    # find the not used transactions and give them a high weight (100 here) -> a high priorty to reduce them
-    for l in range(0, len(transactions_attackert_knowlege)):
+    # find the not used transactions and give them a high weight (100 here) -> a high priority to reduce them
+    for l in range(0, len(transactions_attacker_knowlege)):
        
-        transac= transactions_attackert_knowlege[l]    
+        transac= transactions_attacker_knowlege[l]    
         id = int(transac.attrib['id'])
         if id not in usedTrans:
             det = (transac.attrib['detector'])[6:-2]
@@ -230,7 +230,7 @@ def findTrips():
 
 
 
-#compares trips and combines them if they are mostly equal. sum < min (walletcosts). if a trip has the sum of the min sum try to fill the next 
+#compares trips and combines them if they are mostly equal. sum < min (wallet costs). if a trip has the sum of the min sum try to fill the next
 def compareTripsMin():
     #first limit, percentage should be higher as minlim to combine them in the first iteration
     minlim=40 
@@ -296,7 +296,7 @@ def compareTripsMin():
     pbar.close()
 
 
-#compares trips and combines them if they are mostly equal. sum < max(walletcosts)
+#compares trips and combines them if they are mostly equal. sum < max(wallet costs)
 def compareTripsMax():
     #first limit, percentage should be higher as minlim to combine them in the first iteration
     minlim=60
@@ -344,7 +344,7 @@ def compareTripsMax():
     pbar.close()
 
 
-#compares the trips and trys to add them up to reach the wallet sums
+#compares the trips and tries to add them up to reach the wallet sums
 def compareTripsSum():
     
     #tqdm manual    
@@ -430,7 +430,7 @@ def randomTrip():
     
     
     
-#uses the best results with the lowest difference and trys to optimise the routes with simulated annealing
+#uses the best results with the lowest difference and tries to optimise the routes with simulated annealing
 def simAn():
     global results,usedTrans,annealingResult
     
@@ -450,12 +450,12 @@ def simAn():
         #only use i/n of the trips and calculate the rest again. remove the other transactions from usedTrans list
         analyseTrips2(i, n) 
          
-        #calc. new results and stroe them temp.
+        #calc. new results and store them temp.
         findTrips()
         newResult = copy(results)
         newUsedTrans = usedTrans.copy()  
         newD = delta()
-        #calc. completly new resuls
+        #calc. completely new results
         randomTrip()
         randomD = delta()
         
@@ -527,7 +527,7 @@ def report():
 
 def main():
     global DG,results,usedTrans,tree_attacker_knowlege,root_attacker_knowlege
-    global transactions_attackert_knowlege
+    global transactions_attacker_knowlege
       #create new networkx graph
     DG = nx.DiGraph()
 
@@ -543,7 +543,7 @@ def main():
     root_attacker_knowlege = tree_attacker_knowlege.getroot()
 
     
-    transactions_attackert_knowlege = root_attacker_knowlege[0]
+    transactions_attacker_knowlege = root_attacker_knowlege[0]
 
     output_root = ET.Element('attack')
 

@@ -14,7 +14,7 @@ import os
 # Main method
 def attack():
     # Read 
-    knowledge_tree = etree.parse(rsc_path + 'knowledge/' + input_file_name)
+    knowledge_tree = etree.parse(input_file_name)
     knowledge_root = knowledge_tree.getroot()
     knowledge_transactions = knowledge_root[0] # transactions are first element in attacker xml tree
     global remaining_transactions
@@ -30,28 +30,40 @@ def attack():
     threshold = remaining_transactions
 
     # Create vehicle-wallet dictionary from wallet tags in attacker.xml to keep track of total costs
-    # Useful to subtract transaction costs from total costs
-    dict = {}
-    for child in knowledge_tree.getiterator('wallet'):
-        dict[child.get('vehicle')] = child.get('wallet_cost')
+    # Build vehicle-wallet dictionary, compatible with both old and new schemas
+    vehicle_wallets = {}
+
+    # lxml: find all wallet elements anywhere in the tree
+    for child in knowledge_tree.findall(".//wallet"):
+        # use either 'vehicle' or 'agent'
+        vehicle = child.get("vehicle") or child.get("agent")
+        if not vehicle:
+            print("[WARNING] Skipping wallet without vehicle/agent attribute")
+            continue
+
+        # use either 'wallet_cost' or 'total_wallet_cost'
+        wallet_cost = child.get("wallet_cost") or child.get("total_wallet_cost") or "0"
+        vehicle_wallets[vehicle] = wallet_cost
+
+    print(f"[INFO] Parsed {len(vehicle_wallets)} wallet entries from attacker XML.")
 
     # Initialise output XML file root
     output_root = etree.Element('attack')
 
     # Iterate over all vehicles
-    for vehicle in tqdm(list(dict.keys()),desc='Filling wallet'):
+    for vehicle in tqdm(list(vehicle_wallets.keys()),desc='Filling wallet'):
         # For every vehicle, iterate threshold many times and abort if remaining wallet costs are 0
         iterator = 0
 
-        while iterator < threshold and int(dict[vehicle]) > 0:
+        while iterator < threshold and int(vehicle_wallets[vehicle]) > 0:
             # Randomly choose a transaction
             transaction_to_assign_no = random_int(0,remaining_transactions)
             transaction_to_assign = knowledge_transactions[transaction_to_assign_no]
 
             # If transaction fits into the vehicle’s wallet
-            if int(transaction_to_assign.get('cost')) <= int(dict[vehicle]):
+            if int(transaction_to_assign.get('cost')) <= int(vehicle_wallets[vehicle]):
                 # Reduce wallet costs by costs of assigned transaction
-                dict[vehicle] = str(int(dict[vehicle]) - int(transaction_to_assign.get('cost')))
+                vehicle_wallets[vehicle] = str(int(vehicle_wallets[vehicle]) - int(transaction_to_assign.get('cost')))
 
                 # Append tag to XML file by dirty copying of attributes
                 etree.SubElement(output_root, "transaction", detector=transaction_to_assign.get('detector'), vehicle=vehicle, time=transaction_to_assign.get('time'), junction=transaction_to_assign.get('junction'), cost=transaction_to_assign.get('cost'))
@@ -70,7 +82,7 @@ def attack():
     global output_tag
     output_tag = str(datetime.now().strftime('%d%m%y-%H%M%S'))
     tree = etree.ElementTree(output_root)
-    tree.write(rsc_path + 'attacks/' + output_file_name, pretty_print=True)
+    tree.write('attacks/' + output_file_name, pretty_print=True)
 
 
 
@@ -78,23 +90,23 @@ def attack():
 def report():
     time1 = time.time()
     rep_end = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
-    f = open(rsc_path + 'reports/' + rep_name, 'a')
+    f = open('reports/' + rep_name, 'a')
     f.write('-------------------- Report of RANDOM ATTACK --------------------\n\n')
     f.write('Name of attack script:   ' + sys.argv[0] + '\n')
     f.write('Attack started at        ' + str(rep_start) +'\n')
     f.write('Attack ended at          ' + str(rep_end) +'\n')
     f.write('Runtime:                 ' + str(time1 - time0) + '\n\n')
-    f.write('Attacker knowledge file is   ' + "'" + rsc_path + 'knowledge/' + input_file_name + "'\n")
-    f.write('- of file size               ' + str(os.path.getsize(rsc_path + 'knowledge/' + input_file_name)) + ' bytes\n\n')
-    f.write('Output file is   ' + "'" + rsc_path + 'attacks/' + output_file_name + "'\n")
-    f.write('- of file size   ' + str(os.path.getsize(rsc_path + 'attacks/' + output_file_name)) + ' bytes\n\n')
+    f.write('Attacker knowledge file is   ' + "'" + input_file_name + "'\n")
+    f.write('- of file size               ' + str(os.path.getsize(input_file_name)) + ' bytes\n\n')
+    f.write('Output file is   ' + "'" + 'attacks/' + output_file_name + "'\n")
+    f.write('- of file size   ' + str(os.path.getsize('attacks/' + output_file_name)) + ' bytes\n\n')
     f.write('Random seed was ' + str(seed) + '\n\n')
     f.write('Number of transactions:   ' + str(rep_transactions) + '\n')
     f.write('Number of vehicles:       ' + str(rep_vehicles) + '\n\n')
     f.write('Transaction assignment fails:   ' + str(failed_assignments) + '\n')
     f.write('Unassigned transactions:        ' + str(remaining_transactions) + '\n\n')
     f.write('-------------------- END of report --------------------\n\n')
-    print('Report written to ' + "'" + rsc_path + 'reports/' + rep_name + "'")
+    print('Report written to ' + "'" + 'reports/' + rep_name + "'")
 
 
 

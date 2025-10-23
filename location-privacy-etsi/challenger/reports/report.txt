@@ -16,3 +16,57 @@ Avg. percentage of right transactions in wallets: 5.63%.
 
 -------------------- END of report --------------------
 
+-------------------- Report of ADVANCED EVALUATION --------------------
+
+Name of evaluation script:   /home/ewin/PythonProjects/Location Privacy/location-privacy-etsi/challenger/evaluation_advanced.py
+Evaluation started at        22/10/2025 14:57:46
+Evaluation ended at          22/10/2025 14:57:50
+Runtime:                     3.7316081523895264
+
+Measure of success:     Correctly assigned transactions to wallets or trips with Jaccard index
+Number of transactions: 8972
+Challenger knowledge file is   'spider_100_7_0_challenger.xml'
+- of file size                 2760618 bytes
+
+Avg. percentage of right transactions in trips: 33.03%.
+
+Avg. percentage of right transactions in wallets: 5.63%.
+
+-------------------- END of report --------------------
+
+-------------------- Report of ADVANCED EVALUATION --------------------
+
+Name of evaluation script:   /home/ewin/PythonProjects/Location Privacy/location-privacy-etsi/challenger/evaluation_advanced.py
+Evaluation started at        22/10/2025 14:58:55
+Evaluation ended at          22/10/2025 14:58:58
+Runtime:                     3.4643008708953857
+
+Measure of success:     Correctly assigned transactions to wallets or trips with Jaccard index
+Number of transactions: 8972
+Challenger knowledge file is   'spider_100_7_0_challenger.xml'
+- of file size                 2760618 bytes
+
+Avg. percentage of right transactions in trips: 31.28%.
+
+Avg. percentage of right transactions in wallets: 5.71%.
+
+-------------------- END of report --------------------
+
+-------------------- Report of ADVANCED EVALUATION --------------------
+
+Name of evaluation script:   /home/ewin/PythonProjects/Location Privacy/location-privacy-etsi/challenger/evaluation_advanced.py
+Evaluation started at        23/10/2025 09:20:59
+Evaluation ended at          23/10/2025 09:21:05
+Runtime:                     6.815370798110962
+
+Measure of success:     Correctly assigned transactions to wallets or trips with Jaccard index
+Number of transactions: 8972
+Challenger knowledge file is   'spider_100_7_0_challenger.xml'
+- of file size                 2760618 bytes
+
+Avg. percentage of right transactions in trips: 31.28%.
+
+Avg. percentage of right transactions in wallets: 5.71%.
+
+-------------------- END of report --------------------
+
