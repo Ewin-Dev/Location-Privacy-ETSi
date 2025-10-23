@@ -1,0 +1,69 @@
+-------------------- Report of RANDOM ATTACK --------------------
+
+Name of attack script:   /home/ewin/PythonProjects/Location Privacy/location-privacy-etsi/attacker/attack_random.py
+Attack started at        23/10/2025 09:59:14
+Attack ended at          23/10/2025 09:59:14
+Runtime:                 0.0636909008026123
+
+Attacker knowledge file is   'spider_100_7_0_attacker.xml'
+- of file size               1161661 bytes
+
+Output file is   'attacks/test_attack_random.xml'
+- of file size   10 bytes
+
+Random seed was 8999840278759141429
+
+Number of transactions:   8972
+Number of vehicles:       100
+
+Transaction assignment fails:   0
+Unassigned transactions:        8972
+
+-------------------- END of report --------------------
+
+-------------------- Report of RANDOM ATTACK --------------------
+
+Name of attack script:   /home/ewin/PythonProjects/Location Privacy/location-privacy-etsi/attacker/attack_random.py
+Attack started at        23/10/2025 10:04:54
+Attack ended at          23/10/2025 10:04:54
+Runtime:                 0.06526994705200195
+
+Attacker knowledge file is   'spider_100_7_0_attacker.xml'
+- of file size               1161661 bytes
+
+Output file is   'attacks/test_attack_random.xml'
+- of file size   10 bytes
+
+Random seed was 8908351294880312564
+
+Number of transactions:   8972
+Number of vehicles:       100
+
+Transaction assignment fails:   0
+Unassigned transactions:        8972
+
+-------------------- END of report --------------------
+
+-------------------- Report of RANDOM ATTACK --------------------
+
+Name of attack script:   /home/ewin/PythonProjects/Location Privacy/location-privacy-etsi/attacker/attack_random.py
+Attack started at        23/10/2025 10:08:15
+Attack ended at          23/10/2025 10:08:16
+Runtime:                 1.4600780010223389
+
+Attacker knowledge file is   'spider_100_7_0_attacker.xml'
+- of file size               1161661 bytes
+
+Output file is   'attacks/test_attack_random.xml'
+- of file size   868442 bytes
+
+Random seed was 5433483373108657055
+
+Number of transactions:   8972
+Number of vehicles:       100
+
+Transaction assignment fails:   0
+Unassigned transactions:        0
+
+-------------------- END of report --------------------
+
