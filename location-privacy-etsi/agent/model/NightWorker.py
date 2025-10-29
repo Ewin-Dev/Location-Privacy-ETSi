@@ -7,8 +7,8 @@ import math
 import random
 import numpy as np
 
-from model.Agent import Agent
-from model.AgentType import AgentType
+import Agent
+import AgentType
 
 
 
@@ -48,6 +48,7 @@ class NightWorker(Agent):
 
     # Generate a days worth of actions for the given agent.
     # Returns an array of RoutingStep objects
+    @property
     def generate_day(self):
         actions = []
         if self.current_time.weekday() < 5:
