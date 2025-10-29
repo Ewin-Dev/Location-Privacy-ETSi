@@ -7,6 +7,7 @@ import math
 import random
 import numpy as np
 
+#Wurde Importiert aus den vorhandenen Dateien in diesem Ordner.
 import Agent
 import AgentType
 
