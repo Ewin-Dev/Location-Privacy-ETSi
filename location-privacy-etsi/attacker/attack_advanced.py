@@ -9,7 +9,7 @@ from copy import copy
 from tqdm import tqdm
 from datetime import datetime
 
-#possible trip that was found with all the informations 
+#possible trip that was found with all the information
 class Trip:
   def __init__(self, vehicle, timeStart, timeEnd, duration, cost, trip, used, deltaSum):
     self.vehicle = vehicle
