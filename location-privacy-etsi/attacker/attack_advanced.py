@@ -279,8 +279,9 @@ def compareTripsMin():
                         pos = pos+1
                 
                 copyTrip(tripA,tripB) 
-                pbar.update(1)
-               
+
+            pbar.update(1)
+
         if len(results) == len(walletCosts):
                     break  
         #reduce the limit 
@@ -329,8 +330,8 @@ def compareTripsMax():
                 if len(results) == len(walletCosts):
                     break
                 copyTrip(tripA,tripB) 
-                pbar.update(1)
-                #print(x)
+            pbar.update(1)
+
         minlim = max(minlim-20,0)
         if len(results) == len(walletCosts):
                     break  
@@ -369,10 +370,9 @@ def compareTripsSum():
                     
                     #save the better trip
                     if trip.cost+trip2.cost <= wallet :
-                        copyTrip(trip,trip2) 
-                        pbar.update(1)
+                        copyTrip(trip,trip2)
                         break
-          
+            pbar.update(1)
     pbar.close()
 
 #returns an array backwards
