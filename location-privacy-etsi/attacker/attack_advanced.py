@@ -1,4 +1,5 @@
 import argparse
+import bisect
 import os
 import sys
 import time
@@ -109,50 +110,48 @@ def findTrips():
 
                 #check all outgoing edges from the detector
                 for u, v, data in DG.out_edges(lastDetector, data=True):
-                    
-                    #get the weights
+
+                    #get all candidates for vector 'v'
+                    if v not in transaction_lookup:
+                        continue
+                    candidate_transactions = transaction_lookup[v]
+
+                    #calculate time slot we are searching
                     avg = data.get('avg')
-                    min = data.get('min') 
-                    max = data.get('max')
-                    
-                    
-                    #find suitable transaction 
-                    for  j in range(inner_start+1 , len(transactions_attacker_knowlege)):
+                    min_travel = data.get('min') * 0.8
+                    max_travel = min(data.get('max') * 1.2, 4 * avg)
 
-                        #get the informations from the possible next point    
-                        transaction_inner = transactions_attacker_knowlege[j]
-                        detector_inner = transaction_inner.attrib['detector']
-                        id_inner = int(transaction_inner.attrib['id'])
-                        timeTrans_inner = int(transaction_inner.attrib['time'])
+                    min_time = timeTrans + min_travel
+                    max_time = timeTrans + max_travel
 
-                        #difference between arrival and departure
-                        travel_time = timeTrans_inner - timeTrans
+                    #find starting point
+                    start_index = bisect.bisect_left(candidate_transactions, (min_time, 0, None))
 
-                        # get out the loop if the transactions are to far away
-                        if travel_time > max * 1.2 and travel_time > 3 * avg:
+                    #iterate over remaining relevant transactions
+                    for k in range(start_index, len(candidate_transactions)):
+                        timeTrans_inner, id_inner, transaction_inner = candidate_transactions[k]
+
+                        #stop if we leave the time slot
+                        if timeTrans_inner > max_time:
                             break
 
-                        # check if id is used and the detector is the right
-                        if (detector_inner == v and travel_time >= 0 and travel_time <= 4 * avg and travel_time >= min*0.8  and id_inner not in usedTrans):
-                            
-                            #check if difference is plausible
-                            if  travel_time >= 0 and travel_time >= min*0.8 and travel_time <= max * 1.2: 
-                                
-                                # calculate the difference between the avg. from the simulated times and this
-                                deltaTemp = abs(avg - travel_time)
-                                    
-                                #if the new difference is better than the worst (last ) in the array
-                                # update the array and at the better difference and remove the worst one
-                                if (detector_inner == v and (not found or deltaTemp < bestDeltas[-1][2] )): 
-                                    
-                                    found = True
+                        #remaining checks
 
-                                    bestDeltas.append([id_inner,transaction_inner,deltaTemp,j])
-                                    #sort after the deltaTemp
-                                    bestDeltas.sort(key = lambda c:c[2])
-                                    
-                                    #cut the array. only the n best trips will be saved 
-                                    bestDeltas=bestDeltas[0:2]
+                        #if id_inner is not used yet
+                        if id_inner not in usedTrans:
+                            travel_time = timeTrans_inner - timeTrans
+                            deltaTemp = abs(avg - travel_time)
+
+                            #save the best deltas
+                            if (not found or deltaTemp < bestDeltas[-1][2]):
+                                found = True
+
+                                bestDeltas.append([id_inner, transaction_inner, deltaTemp, k])
+                                # sort after the deltaTemp
+                                bestDeltas.sort(key=lambda c: c[2])
+
+                                # cut the array. only the n best trips will be saved
+                                bestDeltas = bestDeltas[0:2]
                 
                 #get out the while loop if no trip was found             
                 if not found:
@@ -378,17 +377,10 @@ def compareTripsSum():
 
 #returns an array backwards
 def backwards(array):
-
-    n=4 #length of the edge name
-    newarray=[]
-    #cut edges in half and then combine them in backwards order
-    for i in array:
-        string1 = i[0:n//2] 
-        string2 = i[n//2:]
-        
-        s = string2+string1
-        newarray=  [s] + newarray
-    return set(newarray)    
+    n = 4
+    half_n = n // 2
+    #does a string transformation and adds it directly to a set instead of creating a temp array
+    return {i[half_n:] + i[:half_n] for i in array}
 
 #combines two trips and removes one of them
 def copyTrip(tripA,tripB):   
@@ -488,7 +480,28 @@ def create_list():
 
     for result in results:   
         resultCosts.append(result.cost)
-    
+
+
+def generate_Hashmap():
+    global transaction_lookup
+    print("Generating Transaction Lookup...")
+
+    transaction_lookup = {}
+
+    for trans in transactions_attacker_knowlege:
+        detector_name = trans.attrib['detector']
+        if detector_name not in transaction_lookup:
+            transaction_lookup[detector_name] = []
+
+        #Add Time and ID for sorting
+        transaction_lookup[detector_name].append(
+            (int(trans.attrib['time']), int(trans.attrib['id']), trans)
+        )
+
+    #Liste sortieren
+    for det_list in transaction_lookup.values():
+        det_list.sort()
+    print("Hashmap Lookup generated.")
 
 
 # Gets command line arguments using the argparse module
@@ -551,7 +564,9 @@ def main():
 
     print("Start Attacker")
     #generate the graph with the detector nodes
-    generateGraph()  
+    generateGraph()
+    #generate Hashmap Lookup
+    generate_Hashmap()
     #find trips
     simAn()   
     #write trip results   
